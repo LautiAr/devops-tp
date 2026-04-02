@@ -23,6 +23,8 @@ longitud = es un **int** que indica la longitud de la contraseña a generarse
   "password": "WwnL2!dzVG"
 }
 
+```
+
 ### Health
 
 GET /health
@@ -31,8 +33,12 @@ Permite corroborar el estado de la API
 
 #### Respuesta:
 
+```json
+
 {
   "status": "ok"
 }
+
+```
 
 ---
