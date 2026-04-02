@@ -9,7 +9,7 @@ API hecha con Flask para generar contraseñas aleatoras con letras, numeros y ca
 
 ### Generar contraseña
 
-GET /len/<longitud>
+GET /len/longitud
 
 longitud = es un **int** que indica la longitud de la contraseña a generarse
 
@@ -42,3 +42,17 @@ Permite corroborar el estado de la API
 ```
 
 ---
+
+## Docker Setup
+
+La aplicacion ahora puede correr en docker.
+
+### Build Docker Image:
+
+```bash
+sudo docker build -t <nombre> .
+
+sudo docker run -p 5000:5000 <nombre>
+```
+
+Para acceder: **127.0.0.1:5000/len/longitud**
